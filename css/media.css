@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+    .container.main .col-sm-block img {
+        display: none;
+    }
+}
+.menu-hamburger {
+    display: block; /* Показываем меню на мобильных */
+}
+.header {
+    height: 15vh; /* Уменьшаем высоту шапки */
+}
+
+.h1 {
+    font-size: 7vw; /* Уменьшаем размер шрифта */
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    font-size: 5vw; /* Уменьшаем размер шрифта */
+    padding-top: 10px;
+    padding-bottom: 20px; 
+}
+
+.burger {
+    width: 50px;
+    height: 30px;
+}
+
+.menu-list {
+    width: 100%;
+}
+
+.cart {
+    width: 5vw;
+    height: auto;
+}

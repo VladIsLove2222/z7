@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'raleway' ;
+    src: url('../font/Raleway.ttf');
+}
+.menu-hamburger{
+    display: none;
+}
+.burger-checkbox {
+    position: absolute;
+    visibility: hidden;
+  }
+  .burger {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+  }
+  .burger::before,
+  .burger::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #2C2D35;
+  }
+  .burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 #2C2D35;
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+  }
+  .burger::after {
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+  }
+  .burger-checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+  }
+  .burger-checkbox:checked + .burger::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
+  }
+  .menu-list {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: grid;
+    gap: 12px;
+    padding: 42px 0;
+    margin: 0;
+    background: #E1EDE6;
+    list-style-type: none;
+    transform: translateX(-100%);
+    transition: .3s;
+    width: 200px;
+  }
+  .menu-item {
+    display: block;
+    padding: 8px;
+    color: #2C2D35;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .menu-item:hover {
+    background: rgba(255,255,255,.2)
+  }
+  .burger-checkbox:checked ~ .menu-list {
+    transform: translateX(0);
+  }
+/* шапка */
+.header{
+    background: #e1ede6;
+    height: 15vh;
+    font-family: raleway;
+    padding-top: 20px; 
+    padding-bottom: 10px; 
+}
+.inc-house{
+    margin-left: 10px;
+    font-family: raleway;
+    font-weight: bold;
+    color: #598d66;
+    object-fit: contain;
+}
+.cart{
+    width: 22px;
+    height: 22px;
+}
+
+.nav-text{
+    color:#2c2d35;
+    font-size: 20px;
+    
+}
+.header-text{
+    text-align: center; 
+    font-family: raleway;
+    
+}
+/* главная */
+.main{
+    font-family: raleway;
+}
+.container-info{
+  margin-top: 100px;
+}
+.h1{
+    font-size: 7vw;
+    font-family: raleway;
+    color:#2c2d35;
+    text-align: left top;
+    width:100%;
+    height: auto
+}
+.h1-inc-house{
+    color: #598d66
+}
+.text{
+    font-family: raleway;
+    font-size: 18px;
+    color: #86928B;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.btn.btn-outline-primary {
+  color: #598D66;
+  border-radius: 0%;
+  border-color: #598D66;
+}
+.btn.btn-outline-primary:hover{
+  background-color: #598D66;
+  border-color: #598D66;
+}
+/* Репродукции */
+.h2{
+  font-family: raleway;
+  color: #2C2D35;
+}
+.td{
+  padding: 1px;
+}
+.btn.btn-light{
+  background-color:#D4E8D9;
+  color: #2C2D35;
+  font-family: raleway;
+  }
+.btn.btn-light:hover{
+  color: white;
+  background-color: #598d66;
+}
+.btn.fr{
+  background-color: #598d66;
+  color: white;
+}
+.pictures{
+  font-family: 'raleway';
+  width: 100%;
+}
+/* карточки */
+.card {
+  background-color: black;
+  
+}
+
+.card-body{
+  font-family: raleway;
+}
+.author{
+  color: #86928B;
+}
+.card-title{
+  color:#2C2D35;
+}
+.card-text{
+  color:#2C2D35;
+}
+.price{
+  color: #598D66;
+}
+/* новая коллекция */
+.new{
+  background-image: url(../img/pic_background.png);
+  font-family: raleway;
+  color: white;
+  height: 100%;
+  background-size: cover;
+  width: auto;
+}
+.title-new{
+  font-family: raleway;
+  color: white;
+  font-size: 1.7em;
+  text-align: right;
+
+}
+.btn.btn-warning{
+  font-family: raleway;
+  background-color: #EEDB6D;
+}
+/* команда */
+.pic1{
+  position: relative;
+}
+.pic2{
+  position: absolute;
+  left:16px;
+  top: -67px;
+  z-index: 1;
+}
+.text2{
+  color: #2C2D35;
+}
+.team{
+  font-family: raleway;
+  font-size: 1.7em;
+}
+.crew{
+  font-family: raleway;
+}
+/* футер */
+.footer{
+  font-family: raleway;
+  font-size: 0.8em;
+  color: #2C2D35;
+  background-color: #E1EDE6;
+}
+.item{
+  color: #86928B;
+}
+.phone-number{
+  color: #2C2D35;
+}
+.rights{
+  color: #86928B;
+  font-size: 0.8em;
+}
